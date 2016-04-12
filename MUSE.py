@@ -67,7 +67,7 @@ def buildURL():
 
     #preassign dates based on the current date
     todayDate = datetime.now()
-    sDate = '2015-01-01'
+    sDate = '2016-01-01'
     eDate = str(todayDate.year)+'-'+str(todayDate.month)+'-'+str(todayDate.day)
 
     #offer possibility to choose a different start date
@@ -80,8 +80,9 @@ def buildURL():
         #     print('invalid date... try again\n')
         #     sDate = askDate()
 
+	
     collIDs = getCollIDs()
-
+    print('using '+str(sDate))
     #phrase will be found if no records are available for search
     alert = 'No records were found for this time period'
     # urlList = []
